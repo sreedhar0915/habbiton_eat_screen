@@ -69,6 +69,7 @@ class MealCard extends StatelessWidget {
                       fontSize: 12)),
               const SizedBox(height: 10),
               const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircleAvatar(
                     radius: 20,
@@ -78,7 +79,7 @@ class MealCard extends StatelessWidget {
                       color: AppColors.blue,
                     ),
                   ),
-                  Spacer(),
+                  SizedBox(width: 20),
                   CircleAvatar(
                     radius: 20,
                     backgroundColor: AppColors.white,

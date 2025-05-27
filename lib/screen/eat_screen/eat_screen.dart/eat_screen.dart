@@ -45,7 +45,7 @@ class _EatScreenState extends State<EatScreen> {
                     fontSize: 17,
                     fontWeight: FontWeight.w500,
                     color: AppColors.firstTextcolor)),
-            const SizedBox(height: 5),
+            const SizedBox(height: 10),
             Stack(children: [
               Container(
                 width: double.infinity,
@@ -66,7 +66,8 @@ class _EatScreenState extends State<EatScreen> {
                   ],
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -157,53 +158,57 @@ class _EatScreenState extends State<EatScreen> {
                               fontWeight: FontWeight.w400,
                               color: AppColors.grey)),
                       const SizedBox(height: 16),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.green[50],
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Row(
-                          children: [
-                            const CircleAvatar(
-                              radius: 40,
-                              backgroundImage: AssetImage(
-                                "assets/images/chicken_salad_image.png",
-                              ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 20),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text("Next: Lunch",
-                                            style: GoogleFonts.roboto(
-                                                fontSize: 10,
-                                                fontWeight: FontWeight.w400,
-                                                color: AppColors.grey)),
-                                        Text("Time: 12:30 PM",
-                                            style: GoogleFonts.roboto(
-                                                fontSize: 10,
-                                                fontWeight: FontWeight.w400,
-                                                color: AppColors.grey)),
-                                      ],
-                                    ),
-                                    const SizedBox(height: 10),
-                                    Text("Grilled Chicken Salad (450 kcal)",
-                                        style: GoogleFonts.roboto(
-                                            fontSize: 10,
-                                            fontWeight: FontWeight.w500,
-                                            color: AppColors.firstTextcolor)),
-                                  ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: AppColors.chickencontainer,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Row(
+                            children: [
+                              const CircleAvatar(
+                                radius: 40,
+                                backgroundImage: AssetImage(
+                                  "assets/images/chicken_salad_image.png",
                                 ),
                               ),
-                            ),
-                          ],
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 20),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text("Next: Lunch",
+                                              style: GoogleFonts.roboto(
+                                                  fontSize: 10.49,
+                                                  fontWeight: FontWeight.w400,
+                                                  color: AppColors.grey)),
+                                          Text("Time: 12:30 PM",
+                                              style: GoogleFonts.roboto(
+                                                  fontSize: 10.49,
+                                                  fontWeight: FontWeight.w400,
+                                                  color: AppColors.grey)),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 10),
+                                      Text("Grilled Chicken Salad (450 kcal)",
+                                          style: GoogleFonts.roboto(
+                                              fontSize: 10.49,
+                                              fontWeight: FontWeight.w500,
+                                              color: AppColors.firstTextcolor)),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       const SizedBox(height: 16),
@@ -266,7 +271,14 @@ class _EatScreenState extends State<EatScreen> {
                             height: 50,
                             width: 250.w,
                             decoration: BoxDecoration(
-                                color: const Color(0xFF1BAE20),
+                                gradient: const LinearGradient(
+                                  begin: Alignment.centerLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    AppColors.firstcolorbutton,
+                                    AppColors.secondcolorbutton
+                                  ],
+                                ),
                                 borderRadius: BorderRadius.circular(82)),
                             child: Center(
                               child: Text("View my Personalized Diet Plan",
@@ -287,7 +299,7 @@ class _EatScreenState extends State<EatScreen> {
                 ),
               ),
               const Positioned(
-                left: 10,
+                left: 15,
                 top: 50,
                 bottom: 80,
                 child: CircleAvatar(

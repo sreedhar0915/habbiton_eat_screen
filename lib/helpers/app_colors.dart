@@ -7,10 +7,13 @@ class AppColors {
   static const Color secondTextcolor = Color.fromRGBO(67, 67, 67, 1);
   static const Color green = Color.fromRGBO(18, 125, 32, 1);
   static const Color grey = Colors.grey;
+  static const Color chickencontainer = Color.fromRGBO(197, 255, 206, 1);
   static const Color breakfast = Color.fromRGBO(248, 133, 130, 1);
   static const Color lunch = Color(0xFF626AE0);
   static const Color snack = Color(0xFFFD6BB4);
   static const Color transparent = Colors.transparent;
+  static const Color firstcolorbutton = Color.fromRGBO(1, 167, 73, 1);
+  static const Color secondcolorbutton = Color.fromRGBO(1, 246, 120, 1);
   static const Color white = Colors.white;
   static const Color playbutton = Color.fromRGBO(255, 255, 255, 0.45);
   static const Color amber = Color.fromRGBO(255, 149, 0, 1);

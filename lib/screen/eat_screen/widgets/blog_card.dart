@@ -17,7 +17,7 @@ class Blogcard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.all(5),
       child: Container(
         height: 89,
         width: 343.w,
@@ -64,15 +64,15 @@ class Blogcard extends StatelessWidget {
                   const Row(
                     children: [
                       Icon(Icons.timer_sharp, size: 14),
-                      SizedBox(width: 4),
+                      SizedBox(width: 5),
                       Text("0h 12m"),
                       SizedBox(width: 16),
                       Icon(Icons.visibility_outlined, size: 14),
-                      SizedBox(width: 4),
+                      SizedBox(width: 5),
                       Text("65k"),
                       SizedBox(width: 16),
                       Icon(Icons.star_border, size: 14),
-                      SizedBox(width: 4),
+                      SizedBox(width: 5),
                       Text("4.5"),
                     ],
                   ),

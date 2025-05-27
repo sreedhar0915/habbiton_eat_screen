@@ -24,7 +24,7 @@ class Blogcard extends StatelessWidget {
         width: 343.w,
         decoration: BoxDecoration(
           color: AppColors.white,
-          borderRadius: BorderRadius.circular(10.r),
+          borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.2),
@@ -38,10 +38,10 @@ class Blogcard extends StatelessWidget {
           children: [
             sizedBoxWithWidth(10),
             Container(
-              height: 68.h,
-              width: 68.w,
+              height: 68,
+              width: 68,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.r),
+                  borderRadius: BorderRadius.circular(10),
                   image: DecorationImage(
                       image: AssetImage(image), fit: BoxFit.cover)),
             ),

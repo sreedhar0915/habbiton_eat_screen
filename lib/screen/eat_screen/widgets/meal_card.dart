@@ -70,10 +70,10 @@ class MealCard extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       fontSize: 12.sp)),
               sizedBoxWithHeight(10),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 20,
                     backgroundColor: AppColors.white,
                     child: Icon(
@@ -81,8 +81,8 @@ class MealCard extends StatelessWidget {
                       color: AppColors.blue,
                     ),
                   ),
-                  sizedBoxWithWidth(20),
-                  const CircleAvatar(
+                  SizedBox(width: 20),
+                  CircleAvatar(
                     radius: 20,
                     backgroundColor: AppColors.white,
                     child: Icon(
@@ -101,8 +101,8 @@ class MealCard extends StatelessWidget {
         left: 0,
         child: Image.asset(
           image,
-          height: 60.h,
-          width: 60.w,
+          height: 60,
+          width: 60,
         ),
       ),
     ]);

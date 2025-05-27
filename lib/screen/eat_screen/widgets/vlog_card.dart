@@ -19,10 +19,10 @@ class VlogCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       //height: 229,
-      width: 244.w,
+      width: 244,
       decoration: BoxDecoration(
         color: AppColors.white,
-        borderRadius: BorderRadius.circular(10.r),
+        borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
@@ -69,19 +69,19 @@ class VlogCard extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                         color: AppColors.secondTextcolor)),
                 sizedBoxWithHeight(5),
-                Row(
+                const Row(
                   children: [
-                    const Icon(Icons.timer_sharp, size: 14),
-                    sizedBoxWithWidth(4),
-                    const Text("0h 12m"),
-                    sizedBoxWithWidth(16),
-                    const Icon(Icons.visibility_outlined, size: 14),
-                    sizedBoxWithWidth(4),
-                    const Text("65k"),
-                    sizedBoxWithWidth(16),
-                    const Icon(Icons.star_border, size: 14),
-                    sizedBoxWithWidth(4),
-                    const Text("4.5"),
+                    Icon(Icons.timer_sharp, size: 14),
+                    SizedBox(width: 4),
+                    Text("0h 12m"),
+                    SizedBox(width: 16),
+                    Icon(Icons.visibility_outlined, size: 14),
+                    SizedBox(width: 4),
+                    Text("65k"),
+                    SizedBox(width: 16),
+                    Icon(Icons.star_border, size: 14),
+                    SizedBox(width: 4),
+                    Text("4.5"),
                   ],
                 ),
               ],

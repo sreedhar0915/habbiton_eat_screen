@@ -262,25 +262,28 @@ class _EatScreenState extends State<EatScreen> {
                     sizedBoxWithHeight(10),
                     Row(
                       children: [
-                        Container(
-                          height: 50.h,
-                          width: 250.w,
-                          decoration: BoxDecoration(
-                              gradient: const LinearGradient(
-                                begin: Alignment.centerLeft,
-                                end: Alignment.bottomRight,
-                                colors: [
-                                  AppColors.firstcolorbutton,
-                                  AppColors.secondcolorbutton
-                                ],
-                              ),
-                              borderRadius: BorderRadius.circular(82)),
-                          child: Center(
-                            child: Text("View my Personalized Diet Plan",
-                                style: GoogleFonts.roboto(
-                                    fontSize: 16.sp,
-                                    fontWeight: FontWeight.w400,
-                                    color: AppColors.white)),
+                        InkWell(
+                          onTap: () {},
+                          child: Container(
+                            height: 50.h,
+                            width: 250.w,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                  begin: Alignment.centerLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    AppColors.firstcolorbutton,
+                                    AppColors.secondcolorbutton
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(82)),
+                            child: Center(
+                              child: Text("View my Personalized Diet Plan",
+                                  style: GoogleFonts.roboto(
+                                      fontSize: 16.sp,
+                                      fontWeight: FontWeight.w400,
+                                      color: AppColors.white)),
+                            ),
                           ),
                         ),
                         const Spacer(),
@@ -293,8 +296,8 @@ class _EatScreenState extends State<EatScreen> {
                 ),
               ),
               const Positioned(
-                left: 10,
-                top: 60,
+                left: 8,
+                top: 50,
                 bottom: 80,
                 child: CircleAvatar(
                   backgroundColor: AppColors.transparent,

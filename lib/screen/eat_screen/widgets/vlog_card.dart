@@ -3,7 +3,15 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:habbiton_eat_screen/helpers/app_colors.dart';
 
 class VlogCard extends StatelessWidget {
-  const VlogCard({super.key});
+  final String image;
+  final String heading;
+  final String by;
+
+  const VlogCard(
+      {super.key,
+      required this.image,
+      required this.heading,
+      required this.by});
 
   @override
   Widget build(BuildContext context) {
@@ -18,36 +26,48 @@ class VlogCard extends StatelessWidget {
             color: Colors.grey.withOpacity(0.2),
             spreadRadius: 2,
             blurRadius: 8,
-            offset: Offset(0, 4),
+            offset: const Offset(0, 4),
           ),
         ],
       ),
       child: Column(
         children: [
-          Image.asset(
-            "assets/images/vlog_image.png",
-            height: 130,
-            width: double.infinity,
-            fit: BoxFit.cover,
-          ),
+          Stack(children: [
+            Image.asset(
+              image,
+              height: 130,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+            const Positioned(
+                top: 50,
+                bottom: 50,
+                right: 50,
+                left: 50,
+                child: Icon(
+                  Icons.play_circle_outline_rounded,
+                  color: AppColors.playbutton,
+                  size: 50,
+                ))
+          ]),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Lorem ipsum dolor sit amet",
+                Text(heading,
                     style: GoogleFonts.roboto(
                         fontSize: 18,
                         fontWeight: FontWeight.w500,
                         color: AppColors.secondTextcolor)),
-                SizedBox(height: 5),
-                Text("By Lorem Ipsum",
+                const SizedBox(height: 5),
+                Text(by,
                     style: GoogleFonts.roboto(
                         fontSize: 12,
                         fontWeight: FontWeight.w400,
                         color: AppColors.secondTextcolor)),
-                SizedBox(height: 5),
-                Row(
+                const SizedBox(height: 5),
+                const Row(
                   children: [
                     Icon(Icons.timer_sharp, size: 14),
                     SizedBox(width: 4),

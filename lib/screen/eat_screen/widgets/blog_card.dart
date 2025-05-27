@@ -4,7 +4,15 @@ import 'package:habbiton_eat_screen/helpers/app_colors.dart';
 import 'package:habbiton_eat_screen/helpers/size_extension.dart';
 
 class Blogcard extends StatelessWidget {
-  const Blogcard({super.key});
+  final String image;
+  final String heading;
+  final String by;
+
+  const Blogcard(
+      {super.key,
+      required this.image,
+      required this.heading,
+      required this.by});
 
   @override
   Widget build(BuildContext context) {
@@ -34,21 +42,20 @@ class Blogcard extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   image: DecorationImage(
-                      image: AssetImage("assets/images/blog_image.png"),
-                      fit: BoxFit.cover)),
+                      image: AssetImage(image), fit: BoxFit.cover)),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Lorem ipsum dolor sit amet",
+                  Text(heading,
                       style: GoogleFonts.roboto(
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
                           color: AppColors.secondTextcolor)),
                   SizedBox(height: 5),
-                  Text("By Lorem Ipsum",
+                  Text(by,
                       style: GoogleFonts.roboto(
                           fontSize: 12,
                           fontWeight: FontWeight.w400,

@@ -29,13 +29,13 @@ class Blogcard extends StatelessWidget {
               color: Colors.grey.withOpacity(0.2),
               spreadRadius: 2,
               blurRadius: 8,
-              offset: Offset(0, 4),
+              offset: const Offset(0, 4),
             ),
           ],
         ),
         child: Row(
           children: [
-            SizedBox(width: 10),
+            const SizedBox(width: 10),
             Container(
               height: 68,
               width: 68,
@@ -54,14 +54,14 @@ class Blogcard extends StatelessWidget {
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
                           color: AppColors.secondTextcolor)),
-                  SizedBox(height: 5),
+                  const SizedBox(height: 5),
                   Text(by,
                       style: GoogleFonts.roboto(
                           fontSize: 12,
                           fontWeight: FontWeight.w400,
                           color: AppColors.secondTextcolor)),
-                  SizedBox(height: 5),
-                  Row(
+                  const SizedBox(height: 5),
+                  const Row(
                     children: [
                       Icon(Icons.timer_sharp, size: 14),
                       SizedBox(width: 4),

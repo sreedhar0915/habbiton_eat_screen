@@ -19,11 +19,11 @@ class Blogcard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(5),
       child: Container(
-        height: 89,
+        height: 89.h,
         width: 343.w,
         decoration: BoxDecoration(
           color: AppColors.white,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(10.r),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.2),
@@ -37,10 +37,10 @@ class Blogcard extends StatelessWidget {
           children: [
             const SizedBox(width: 10),
             Container(
-              height: 68,
-              width: 68,
+              height: 68.h,
+              width: 68.w,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10.r),
                   image: DecorationImage(
                       image: AssetImage(image), fit: BoxFit.cover)),
             ),
@@ -51,13 +51,13 @@ class Blogcard extends StatelessWidget {
                 children: [
                   Text(heading,
                       style: GoogleFonts.roboto(
-                          fontSize: 18,
+                          fontSize: 18.sp,
                           fontWeight: FontWeight.w500,
                           color: AppColors.secondTextcolor)),
                   const SizedBox(height: 5),
                   Text(by,
                       style: GoogleFonts.roboto(
-                          fontSize: 12,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w400,
                           color: AppColors.secondTextcolor)),
                   const SizedBox(height: 5),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:habbiton_eat_screen/helpers/app_colors.dart';
+import 'package:habbiton_eat_screen/helpers/size_extension.dart';
 
 class MealCard extends StatelessWidget {
   final String heading;
@@ -22,7 +23,7 @@ class MealCard extends StatelessWidget {
         width: 150,
         margin: const EdgeInsets.only(right: 12),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(16.r),
         ),
       ),
       Positioned(
@@ -59,14 +60,14 @@ class MealCard extends StatelessWidget {
                   style: GoogleFonts.poppins(
                       color: AppColors.white,
                       fontWeight: FontWeight.w500,
-                      fontSize: 17)),
+                      fontSize: 17.sp)),
               const SizedBox(height: 4),
               Text(subheading,
                   maxLines: 3,
                   style: GoogleFonts.poppins(
                       color: AppColors.white,
                       fontWeight: FontWeight.w400,
-                      fontSize: 12)),
+                      fontSize: 12.sp)),
               const SizedBox(height: 10),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -99,8 +100,8 @@ class MealCard extends StatelessWidget {
         left: 0,
         child: Image.asset(
           image,
-          height: 60,
-          width: 60,
+          height: 60.h,
+          width: 60.w,
         ),
       ),
     ]);

@@ -32,7 +32,7 @@ class _EatScreenState extends State<EatScreen> {
               children: [
                 Text("Eat",
                     style: GoogleFonts.roboto(
-                        fontSize: 24,
+                        fontSize: 24.sp,
                         fontWeight: FontWeight.w500,
                         color: AppColors.firstTextcolor)),
                 const Spacer(),
@@ -42,7 +42,7 @@ class _EatScreenState extends State<EatScreen> {
             const SizedBox(height: 5),
             Text("Daily status",
                 style: GoogleFonts.roboto(
-                    fontSize: 17,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     color: AppColors.firstTextcolor)),
             const SizedBox(height: 10),
@@ -77,12 +77,12 @@ class _EatScreenState extends State<EatScreen> {
                           children: [
                             Text("1200 kcal",
                                 style: GoogleFonts.roboto(
-                                    fontSize: 15,
+                                    fontSize: 15.sp,
                                     fontWeight: FontWeight.w500,
                                     color: AppColors.firstTextcolor)),
                             Text("consumed",
                                 style: GoogleFonts.roboto(
-                                    fontSize: 12,
+                                    fontSize: 12.sp,
                                     fontWeight: FontWeight.w400,
                                     color: AppColors.grey)),
                           ],
@@ -113,14 +113,14 @@ class _EatScreenState extends State<EatScreen> {
                                     ),
                                     Text("2000",
                                         style: GoogleFonts.roboto(
-                                            fontSize: 24,
+                                            fontSize: 24.sp,
                                             fontWeight: FontWeight.w500,
                                             color: AppColors.firstTextcolor),
                                         textAlign: TextAlign.center),
                                     Text(
                                       "kcal",
                                       style: GoogleFonts.roboto(
-                                          fontSize: 8,
+                                          fontSize: 8.sp,
                                           fontWeight: FontWeight.w400,
                                           color: AppColors.firstTextcolor),
                                     ),
@@ -134,12 +134,12 @@ class _EatScreenState extends State<EatScreen> {
                           children: [
                             Text("800 kcal",
                                 style: GoogleFonts.roboto(
-                                    fontSize: 15,
+                                    fontSize: 15.sp,
                                     fontWeight: FontWeight.w500,
                                     color: AppColors.firstTextcolor)),
                             Text("remaining",
                                 style: GoogleFonts.roboto(
-                                    fontSize: 12,
+                                    fontSize: 12.sp,
                                     fontWeight: FontWeight.w400,
                                     color: AppColors.grey)),
                           ],
@@ -152,14 +152,14 @@ class _EatScreenState extends State<EatScreen> {
                     ),
                     Text("Don't forget to eat! Your lunch is due in 1hr 10min.",
                         style: GoogleFonts.roboto(
-                            fontSize: 10,
+                            fontSize: 10.sp,
                             fontWeight: FontWeight.w400,
                             color: AppColors.grey)),
                     const SizedBox(height: 16),
                     Container(
                       decoration: BoxDecoration(
                         color: AppColors.chickencontainer,
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(12.r),
                       ),
                       child: Row(
                         children: [
@@ -182,12 +182,12 @@ class _EatScreenState extends State<EatScreen> {
                                     children: [
                                       Text("Next: Lunch",
                                           style: GoogleFonts.roboto(
-                                              fontSize: 10.49,
+                                              fontSize: 10.sp,
                                               fontWeight: FontWeight.w400,
                                               color: AppColors.grey)),
                                       Text("Time: 12:30 PM",
                                           style: GoogleFonts.roboto(
-                                              fontSize: 10.49,
+                                              fontSize: 10.sp,
                                               fontWeight: FontWeight.w400,
                                               color: AppColors.grey)),
                                     ],
@@ -195,7 +195,7 @@ class _EatScreenState extends State<EatScreen> {
                                   const SizedBox(height: 10),
                                   Text("Grilled Chicken Salad (450 kcal)",
                                       style: GoogleFonts.roboto(
-                                          fontSize: 10.49,
+                                          fontSize: 10.sp,
                                           fontWeight: FontWeight.w500,
                                           color: AppColors.firstTextcolor)),
                                 ],
@@ -213,7 +213,7 @@ class _EatScreenState extends State<EatScreen> {
                           children: [
                             Text("Protein",
                                 style: GoogleFonts.roboto(
-                                    fontSize: 13,
+                                    fontSize: 13.sp,
                                     fontWeight: FontWeight.w500,
                                     color: AppColors.grey)),
                             const SizedBox(height: 4),
@@ -228,7 +228,7 @@ class _EatScreenState extends State<EatScreen> {
                           children: [
                             Text("Carbs",
                                 style: GoogleFonts.roboto(
-                                    fontSize: 13,
+                                    fontSize: 13.sp,
                                     fontWeight: FontWeight.w500,
                                     color: AppColors.grey)),
                             const SizedBox(height: 4),
@@ -243,7 +243,7 @@ class _EatScreenState extends State<EatScreen> {
                           children: [
                             Text("Fat",
                                 style: GoogleFonts.roboto(
-                                    fontSize: 13,
+                                    fontSize: 13.sp,
                                     fontWeight: FontWeight.w500,
                                     color: AppColors.grey)),
                             const SizedBox(height: 4),
@@ -262,7 +262,7 @@ class _EatScreenState extends State<EatScreen> {
                     Row(
                       children: [
                         Container(
-                          height: 50,
+                          height: 50.h,
                           width: 250.w,
                           decoration: BoxDecoration(
                               gradient: const LinearGradient(
@@ -277,7 +277,7 @@ class _EatScreenState extends State<EatScreen> {
                           child: Center(
                             child: Text("View my Personalized Diet Plan",
                                 style: GoogleFonts.roboto(
-                                    fontSize: 16,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.w400,
                                     color: AppColors.white)),
                           ),
@@ -292,8 +292,8 @@ class _EatScreenState extends State<EatScreen> {
                 ),
               ),
               const Positioned(
-                left: 15,
-                top: 50,
+                left: 10,
+                top: 60,
                 bottom: 80,
                 child: CircleAvatar(
                   backgroundColor: AppColors.transparent,
@@ -311,7 +311,7 @@ class _EatScreenState extends State<EatScreen> {
               children: [
                 Text("Meals today",
                     style: GoogleFonts.roboto(
-                        fontSize: 17,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         color: AppColors.firstTextcolor)),
                 TextButton(
@@ -319,7 +319,7 @@ class _EatScreenState extends State<EatScreen> {
                     child: Text(
                       "Show stats",
                       style: GoogleFonts.roboto(
-                          fontSize: 14,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
                           color: AppColors.green),
                     )),
@@ -353,7 +353,7 @@ class _EatScreenState extends State<EatScreen> {
               children: [
                 Text("Vlogs",
                     style: GoogleFonts.roboto(
-                        fontSize: 17,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         color: AppColors.firstTextcolor)),
                 TextButton(
@@ -361,7 +361,7 @@ class _EatScreenState extends State<EatScreen> {
                     child: Text(
                       "See all",
                       style: GoogleFonts.roboto(
-                          fontSize: 14,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
                           color: AppColors.green),
                     )),
@@ -390,7 +390,7 @@ class _EatScreenState extends State<EatScreen> {
               children: [
                 Text("Blogs",
                     style: GoogleFonts.roboto(
-                        fontSize: 17,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         color: AppColors.firstTextcolor)),
                 TextButton(
@@ -398,7 +398,7 @@ class _EatScreenState extends State<EatScreen> {
                     child: Text(
                       "See all",
                       style: GoogleFonts.roboto(
-                          fontSize: 14,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
                           color: AppColors.green),
                     )),

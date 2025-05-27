@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:habbiton_eat_screen/helpers/app_colors.dart';
 import 'package:habbiton_eat_screen/helpers/size_extension.dart';
+import 'package:habbiton_eat_screen/helpers/sized_box.dart';
 
 class VlogCard extends StatelessWidget {
   final String image;
@@ -61,26 +62,26 @@ class VlogCard extends StatelessWidget {
                         fontSize: 18.sp,
                         fontWeight: FontWeight.w500,
                         color: AppColors.secondTextcolor)),
-                const SizedBox(height: 5),
+                sizedBoxWithHeight(5),
                 Text(by,
                     style: GoogleFonts.roboto(
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w400,
                         color: AppColors.secondTextcolor)),
-                const SizedBox(height: 5),
-                const Row(
+                sizedBoxWithHeight(5),
+                Row(
                   children: [
-                    Icon(Icons.timer_sharp, size: 14),
-                    SizedBox(width: 4),
-                    Text("0h 12m"),
-                    SizedBox(width: 16),
-                    Icon(Icons.visibility_outlined, size: 14),
-                    SizedBox(width: 4),
-                    Text("65k"),
-                    SizedBox(width: 16),
-                    Icon(Icons.star_border, size: 14),
-                    SizedBox(width: 4),
-                    Text("4.5"),
+                    const Icon(Icons.timer_sharp, size: 14),
+                    sizedBoxWithWidth(4),
+                    const Text("0h 12m"),
+                    sizedBoxWithWidth(16),
+                    const Icon(Icons.visibility_outlined, size: 14),
+                    sizedBoxWithWidth(4),
+                    const Text("65k"),
+                    sizedBoxWithWidth(16),
+                    const Icon(Icons.star_border, size: 14),
+                    sizedBoxWithWidth(4),
+                    const Text("4.5"),
                   ],
                 ),
               ],

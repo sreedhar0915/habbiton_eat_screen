@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:habbiton_eat_screen/helpers/app_colors.dart';
 import 'package:habbiton_eat_screen/helpers/size_extension.dart';
+import 'package:habbiton_eat_screen/helpers/sized_box.dart';
 
 class MealCard extends StatelessWidget {
   final String heading;
@@ -61,18 +62,18 @@ class MealCard extends StatelessWidget {
                       color: AppColors.white,
                       fontWeight: FontWeight.w500,
                       fontSize: 17.sp)),
-              const SizedBox(height: 4),
+              sizedBoxWithHeight(4),
               Text(subheading,
                   maxLines: 3,
                   style: GoogleFonts.poppins(
                       color: AppColors.white,
                       fontWeight: FontWeight.w400,
                       fontSize: 12.sp)),
-              const SizedBox(height: 10),
-              const Row(
+              sizedBoxWithHeight(10),
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 20,
                     backgroundColor: AppColors.white,
                     child: Icon(
@@ -80,8 +81,8 @@ class MealCard extends StatelessWidget {
                       color: AppColors.blue,
                     ),
                   ),
-                  SizedBox(width: 20),
-                  CircleAvatar(
+                  sizedBoxWithWidth(20),
+                  const CircleAvatar(
                     radius: 20,
                     backgroundColor: AppColors.white,
                     child: Icon(

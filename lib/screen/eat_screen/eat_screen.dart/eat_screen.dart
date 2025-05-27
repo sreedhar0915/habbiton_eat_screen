@@ -8,6 +8,7 @@ import 'package:habbiton_eat_screen/screen/eat_screen/widgets/blog_card.dart';
 import 'package:habbiton_eat_screen/screen/eat_screen/widgets/meal_card.dart';
 import 'package:habbiton_eat_screen/screen/eat_screen/widgets/percentage_indicator.dart';
 import 'package:habbiton_eat_screen/screen/eat_screen/widgets/vlog_card.dart';
+import 'package:habbiton_eat_screen/helpers/sized_box.dart';
 import 'package:provider/provider.dart';
 
 class EatScreen extends StatefulWidget {
@@ -39,13 +40,13 @@ class _EatScreenState extends State<EatScreen> {
                 IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
               ],
             ),
-            const SizedBox(height: 5),
+            sizedBoxWithHeight(5),
             Text("Daily status",
                 style: GoogleFonts.roboto(
                     fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     color: AppColors.firstTextcolor)),
-            const SizedBox(height: 10),
+            sizedBoxWithHeight(10),
             Stack(children: [
               Container(
                 width: double.infinity,
@@ -146,7 +147,7 @@ class _EatScreenState extends State<EatScreen> {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 10),
+                    sizedBoxWithHeight(10),
                     const Divider(
                       color: AppColors.grey,
                     ),
@@ -155,7 +156,7 @@ class _EatScreenState extends State<EatScreen> {
                             fontSize: 10.sp,
                             fontWeight: FontWeight.w400,
                             color: AppColors.grey)),
-                    const SizedBox(height: 16),
+                    sizedBoxWithHeight(16),
                     Container(
                       decoration: BoxDecoration(
                         color: AppColors.chickencontainer,
@@ -192,7 +193,7 @@ class _EatScreenState extends State<EatScreen> {
                                               color: AppColors.grey)),
                                     ],
                                   ),
-                                  const SizedBox(height: 10),
+                                  sizedBoxWithHeight(10),
                                   Text("Grilled Chicken Salad (450 kcal)",
                                       style: GoogleFonts.roboto(
                                           fontSize: 10.sp,
@@ -205,7 +206,7 @@ class _EatScreenState extends State<EatScreen> {
                         ],
                       ),
                     ),
-                    const SizedBox(height: 16),
+                    sizedBoxWithHeight(16),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -216,10 +217,10 @@ class _EatScreenState extends State<EatScreen> {
                                     fontSize: 13.sp,
                                     fontWeight: FontWeight.w500,
                                     color: AppColors.grey)),
-                            const SizedBox(height: 4),
+                            sizedBoxWithHeight(4),
                             const PercentageBar(
                                 percentage: 0.5, color: AppColors.green),
-                            const SizedBox(height: 4),
+                            sizedBoxWithHeight(4),
                             const Text("20 - 30 gms",
                                 style: TextStyle(color: AppColors.green)),
                           ],
@@ -231,10 +232,10 @@ class _EatScreenState extends State<EatScreen> {
                                     fontSize: 13.sp,
                                     fontWeight: FontWeight.w500,
                                     color: AppColors.grey)),
-                            const SizedBox(height: 4),
+                            sizedBoxWithHeight(4),
                             const PercentageBar(
                                 percentage: 0.5, color: AppColors.amber),
-                            const SizedBox(height: 4),
+                            sizedBoxWithHeight(4),
                             const Text("10 - 15 gms",
                                 style: TextStyle(color: AppColors.amber)),
                           ],
@@ -246,19 +247,19 @@ class _EatScreenState extends State<EatScreen> {
                                     fontSize: 13.sp,
                                     fontWeight: FontWeight.w500,
                                     color: AppColors.grey)),
-                            const SizedBox(height: 4),
+                            sizedBoxWithHeight(4),
                             const PercentageBar(
                                 percentage: 0.5, color: AppColors.red),
-                            const SizedBox(height: 4),
+                            sizedBoxWithHeight(4),
                             const Text("10 - 15 gms",
                                 style: TextStyle(color: AppColors.red)),
                           ],
                         ),
                       ],
                     ),
-                    const SizedBox(height: 10),
+                    sizedBoxWithHeight(10),
                     const Divider(color: AppColors.grey),
-                    const SizedBox(height: 10),
+                    sizedBoxWithHeight(10),
                     Row(
                       children: [
                         Container(
@@ -304,7 +305,7 @@ class _EatScreenState extends State<EatScreen> {
                 ),
               ),
             ]),
-            const SizedBox(height: 20),
+            sizedBoxWithHeight(20),
             //meals today
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -345,7 +346,7 @@ class _EatScreenState extends State<EatScreen> {
                       const SizedBox(width: 10),
                   itemCount: provider.length),
             ),
-            const SizedBox(height: 24),
+            sizedBoxWithHeight(24),
 
             // Vlogs section
             Row(

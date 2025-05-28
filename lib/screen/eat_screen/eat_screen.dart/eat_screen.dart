@@ -165,7 +165,7 @@ class _EatScreenState extends State<EatScreen> {
                       child: Row(
                         children: [
                           const CircleAvatar(
-                            radius: 40,
+                            radius: 35,
                             backgroundImage: AssetImage(
                               "assets/images/chicken_salad_image.png",
                             ),
@@ -296,7 +296,7 @@ class _EatScreenState extends State<EatScreen> {
                 ),
               ),
               const Positioned(
-                left: 5,
+                left: 10,
                 top: 50,
                 bottom: 70,
                 child: CircleAvatar(

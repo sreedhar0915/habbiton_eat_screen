@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habbiton_eat_screen/helpers/app_colors.dart';
 import 'package:habbiton_eat_screen/helpers/size_extension.dart';
 
 class PercentageBar extends StatelessWidget {
@@ -11,10 +12,10 @@ class PercentageBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 5.h,
-      width: 60.w,
+      height: 5,
+      width: 60,
       decoration: BoxDecoration(
-        color: Colors.grey[300],
+        color: AppColors.grey,
         borderRadius: BorderRadius.circular(10.r),
       ),
       child: Stack(

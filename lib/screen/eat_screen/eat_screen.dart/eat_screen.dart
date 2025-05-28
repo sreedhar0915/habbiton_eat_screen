@@ -156,7 +156,7 @@ class _EatScreenState extends State<EatScreen> {
                             fontSize: 10.sp,
                             fontWeight: FontWeight.w400,
                             color: AppColors.grey)),
-                    sizedBoxWithHeight(16),
+                    sizedBoxWithHeight(22),
                     Container(
                       decoration: BoxDecoration(
                         color: AppColors.chickencontainer,
@@ -193,7 +193,7 @@ class _EatScreenState extends State<EatScreen> {
                                               color: AppColors.grey)),
                                     ],
                                   ),
-                                  sizedBoxWithHeight(10),
+                                  const SizedBox(height: 10),
                                   Text("Grilled Chicken Salad (450 kcal)",
                                       style: GoogleFonts.roboto(
                                           fontSize: 10.sp,
@@ -296,9 +296,9 @@ class _EatScreenState extends State<EatScreen> {
                 ),
               ),
               const Positioned(
-                left: 8,
+                left: 5,
                 top: 50,
-                bottom: 80,
+                bottom: 70,
                 child: CircleAvatar(
                   backgroundColor: AppColors.transparent,
                   radius: 50,
